@@ -1,0 +1,18 @@
+<section>
+  <form action="" class="d-flex justify-content-center align-item-center" [formGroup]="formLogin">
+    <div class="row mt-4 text-center">
+      <div class="col-12 mt-2">
+        <img src="{{logo}}" alt="Logo" class="logo">
+      </div>
+      <div class="col-12 mt-2">
+        <input type="text" pInputText name="username" autocomplete="false" formControlName="username"/>
+      </div>
+      <div class="col-12 mt-2">
+          <input type="password" pPassword [feedback]="false" name="password" formControlName="password">
+      </div>
+      <div class="col-12 mt-2">
+          <button type="button" pButton label="Iniciar sesión" (click)="login()"></button>
+      </div>
+    </div>
+  </form>
+</section>
